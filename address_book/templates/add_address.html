@@ -2,5 +2,41 @@
 
 
 {% block content %}
-	<h1> Ajouter une addresse </h1>
+	<h1>Ajouter vos informations</h1>
+</br>
+	<form method="POST">
+		{% csrf_token %}
+
+		<div class="form-group">
+		    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nom complet" name="name">
+	 	</div>
+
+	  	<div class="form-group">
+		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Adresse mail" name="email">
+	 	</div>
+
+	 	<div class="form-group">
+		    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Télephone"name="phone">
+	 	</div>
+
+	 	<div class="form-group">
+		    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Adresse"name="address">
+	 	</div>
+
+	 	<div class="form-group">
+		    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Vile"name="city">
+	 	</div>
+
+	 	<div class="form-group">
+		    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Pays"name="state">
+	 	</div>
+
+	 	<div class="form-group">
+		    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Code Postal"name="zipcode">
+	 	</div>
+</br>
+	  	
+	  <button type="submit" class="btn btn-secondary"> Ajouter </button>
+	</form>
+
 {% endblock %}
